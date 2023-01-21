@@ -10,4 +10,19 @@ name = "rasput_structures"
 version = "0.1.0"
 description = "some data structures implemented in python (git is used here as something like dropbox)"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
+
+
+[tool.tox]
+legacy_tox_ini = """
+        [tox]
+        env_list = 
+            py311
+            py310
+            py39
+            py39
+
+        [testenv]
+        deps = pytest
+        commands = pytest tests
+"""
