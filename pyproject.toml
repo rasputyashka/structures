@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=66.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "rasput_structures"
+version = "0.1.0"
+description = "some data structures implemented in python (git is used here as something like dropbox)"
+readme = "README.md"
+requires-python = ">=3.10"
